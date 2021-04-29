@@ -22,7 +22,7 @@ nav:
     - Interfaces: structs/interfaces.md
   - Concurrency:
     - Goroutines: concurrency/goroutines.md
-    - Channels: concurrency/gochannels.md
+    - Channels: concurrency/channels.md
   
 markdown_extensions:
   - pymdownx.highlight:
