@@ -1,0 +1,20 @@
+site_name: Go Tutorial
+site_author: "Justin-Anthony Joco"
+
+repo_name: justinjoco/go-tutorial
+repo_url: https://github.com/justinjoco/go-tutorial
+
+copyright:   'Copyright &copy; 2021 Justin-Anthony Joco'
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tabs
+nav:
+  - Overview: index.md
+  
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
