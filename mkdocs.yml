@@ -12,9 +12,17 @@ theme:
     primary: cyan
   features:
     - navigation.sections
-    - navigation.tabs
+
 nav:
   - Overview: index.md
+  - Basics: 
+    - Building and Running Go Code: basics/building.md
+  - Structs and Interfaces: 
+    - Structs: structs/structs.md
+    - Interfaces: structs/interfaces.md
+  - Concurrency:
+    - Goroutines: concurrency/goroutines.md
+    - Channels: concurrency/gochannels.md
   
 markdown_extensions:
   - pymdownx.highlight:
