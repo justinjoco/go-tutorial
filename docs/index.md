@@ -2,9 +2,7 @@ This document is a how-to for developers on how to read and write Go code. Reade
 
 This document will also include links to repl.it, in which readers can run and change pre-existing Go code to further understand how to use it.
 
-## Go: What, Who, and Why?
-
-### What is the Go (Golang) language?
+## What is the Go (Golang) language?
 Firstly, Go is a compiled programming language. To understand what this means, we must distinguish two times: compile time and run time. For a program to run, your code must be compiled (compile time), and the resulting executable should be ran (run time).
 
 - Compile time: a “complier” translates your human-readable code into a machine-readable binary (or executable) file. 
@@ -15,7 +13,7 @@ Secondly, Go is statically-typed, which means that your code’s variables' data
 
 Compared to other languages, some say it is a “better version of C” because not only does Go generally perform very well in terms of speed and memory efficiency (similarly to other C languages), but it is also easy to read and write. In addition, Go has memory safety, garbage collection, and concurrency features not present in C. In fact, Go was developed by Google developers who didn’t like C++, which is one of the earliest, most popular extensions of C.
 
-### What applications are written in Go, and which companies use it?
+## What applications are written in Go, and which companies use it?
 - Applications
     - Docker Community Edition, Compose-CLI, etc.
     - InfluxDB: monitors computer performance metrics
@@ -29,7 +27,7 @@ Compared to other languages, some say it is a “better version of C” because 
     - Twitch 
     - Uber
 
-### Why should I use Go?
+## Why should I use Go?
 - Very good run-time performance, similar to that of C and C++
 - Designed to be readable like Python or JS
     - Syntax is like combination of Python, TS, and C
