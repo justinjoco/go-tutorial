@@ -8,6 +8,8 @@ copyright:   'Copyright &copy; 2021 Justin-Anthony Joco'
 
 theme:
   name: material
+  palette:
+    primary: cyan
   features:
     - navigation.sections
     - navigation.tabs
