@@ -12,14 +12,29 @@ theme:
     primary: cyan
   features:
     - navigation.sections
+    - navigation.tabs
 
 nav:
   - Overview: index.md
-  - Basics: 
-    - Building and Running Go Code: basics/building.md
-  - Structs and Interfaces: 
-    - Structs: structs/structs.md
-    - Interfaces: structs/interfaces.md
+  - Fundamentals:
+    - Basics: 
+      - Building and Running Go Code: basics/building.md
+      - Importing Packages: basics/import.md
+      - Variables and Assignments: basics/vars.md
+      - Conditionals: basics/conditionals.md
+      - Looping: basics/looping.md
+      - Switch-Case: basics/switch.md
+      - Pointers: basics/pointers.md
+      - Functions: basics/functions.md
+      - Error Handling: basics/errors.md
+    - Collections:
+      - Arrays: collections/arrays.md
+      - Slices: collections/slices.md
+      - Maps: collections/maps.md
+    - Structs and Interfaces: 
+      - Structs: pseudo-oop/structs.md
+      - Methods: pseudo-oop/methods.md
+      - Interfaces: pseudo-oop/interfaces.md
   - Concurrency:
     - Goroutines: concurrency/goroutines.md
     - Channels: concurrency/channels.md
