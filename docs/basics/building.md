@@ -9,3 +9,13 @@
         2. Run `go build -o <output-executable> <source-directory>`, in which `<output-exectuable>` is your custom name of the Go executable
         3. Run `./<output-executable> <args>`, in which `<args>` are potential input arguments to executable
 
+### Hello World ([https://repl.it/@jjoco/go-hello-world](https://repl.it/@jjoco/go-hello-world))
+
+- Need a main function to run Go program, like other C-like languages
+
+**Note**
+
+1. The first statement in a Go source file must be package name. Executable commands must always use package main.
+2. Use fmt package in order to print out strings to the console
+  - fmt.Println() =\&gt; prints a list of variables to STDOUT with default formatting and inserts spaces between the variables  **and**  appends a new line at the end.
+  - fmt.Printf() =\&gt;allows you to specify the formatting using a format template
