@@ -5,16 +5,6 @@ Sample code link: ([https://repl.it/@jjoco/go-looping](https://repl.it/@jjoco/go
 Like many other languages, Go supports traditional for-looping. The caveat is the lack of parentheses around the for statements
 
 Syntax
-
-Typescript
-```ts
-for (let i = start; i < end; i+=increment ){
-
-//Do stuff each iteration
-
-}
-```
-Golang
 ```go
 for i := start ; i < end ; i += increment {
 
@@ -40,15 +30,6 @@ Unlike many other languages, Go does not have while loops; instead, for loops ca
 
 Syntax
 
-Typescript
-```ts
-while (condition){
-
-//Do stuff each iteration
-
-}
-```
-Go
 ```go
 for condition {
 
@@ -75,16 +56,6 @@ accumulator += 1
 Even though there are no while loops in Go, a developer can write infinite loops by using a for loop with no condition, like the following:
 
 ##### Syntax
-
-Typescript
-```ts
-while (true){
-
-//Code that runs on each iteration goes here...
-
-}
-```
-Go
 ```go
 for {
 

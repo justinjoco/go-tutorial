@@ -12,40 +12,11 @@ Sample code link: [https://repl.it/@jjoco/go-variables-and-assignment](https://r
 - Complex numbers: complex64, complex128
 - **Void is not a type**
 
-##### Note: int and uint are "are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems"
+***Note: int and uint are "are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems"***
 
 #### Regular Assignment
 
-At compile time, the developer can specify the type of the variable declared using the var keyword. Compared with Typescript, Go only uses var, not let.
-
-Typescript
-```ts
-let notAssignedInt : number
-
-console.log("Not assigned int: ", notAssignedInt)
-
-//Compile error => notAssignedInt is not assigned
-
-let notAssignedVar
-
-console.log("Not assigned var: ", notAssignedVar)
-
-//Output = "Not assigned var: undefined"
-
-let assignedBool1: boolean = true
-
-console.log("AssignedBool: ", assignedBool1)
-
-//Output = "AssignedBool: true"
-
-let assignedBool2 = false
-
-console.log("AssignedBool: ", assignedBool2)
-
-//Output = "AssignedBool: false"
-```
-Go
-
+At compile time, the developer can specify the type of the variable declared using the var keyword. 
 ```go
 var notAssignedInt int
 

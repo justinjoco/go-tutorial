@@ -6,42 +6,6 @@ Structs are analogous to classes in OOP languages. These are your user-defined t
 
 Use type and struct to declare a blueprint of your struct.
 
-Typescript
-```ts
-/*Creating a new Type*/
-
-type TypeName = {
-
-field1: field1Type
-
-field2: field2Type
-
-.
-
-.
-
-.
-
-}
-```
-```ts
-/*Creating a new Class*/
-
-class ClassName {
-
-field1: Field1Type
-.
-.
-.
-constructor(args){
-...
-}
-.
-.
-.
-}
-```
-Go
 ```Go
 type TypeName struct {
 field1 field1Type
@@ -84,20 +48,6 @@ radius float64
 Similar to creating a new class instance in OOP languages, a dev can create a new variable of your customized struct without extra keywords.
 
 ##### Syntax
-
-Typescript
-```ts
-/*Creating variable of new type*/
-
-let typeVar TypeName = {field1: field1Value , ..., fieldN: fieldNValue}
-
-/*Creating instance of custom class*/
-
-let classInstance1: ClassObj = new ClassObj(args)
-
-let classInstance2 = new ClassObj(args)
-```
-Go
 ```go
 /*Declaring new type variable*/
 

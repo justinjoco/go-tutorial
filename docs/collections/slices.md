@@ -131,25 +131,6 @@ copy(copySlice, origSlice)
 
 You can certainly iterate through an slice like in other languages by using the slice's indices. However, one can use the range keyword to iterate through a slice's indices and elements simultaneously without using traditional array. This is very similar to using the enumerate function in Python.
 
-Typescript
-```ts
-//Iterate via indexes
-
-for (let i = 0; i < N ; i++){
-
-Do stuff to exampleArr[i]
-
-}
-
-//Iterate via for...of
-
-for (const element of exampleArr){
-
-Do stuff to element
-
-}
-```
-Go
 ```go
 // element == exampleSlice[i]
 

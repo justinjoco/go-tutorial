@@ -5,24 +5,6 @@ Sample code link: ([https://repl.it/@jjoco/go-conditionals](https://repl.it/@jjo
 Like all other programming languages, Go has traditional if-else statements; the main difference is the lack of parentheses around the condition:
 
 ##### Syntax
-
-Typescript:
-```ts
-if (condition) {
-
-//Do stuff in first condition ...
-
-} else if (otherCondition) {
-
-//Do stuff in otherCondition...
-
-} else {
-
-//Do stuff if none of the above is satisfied ...
-
-}
-```
-Go:
 ```go
 if condition {
 

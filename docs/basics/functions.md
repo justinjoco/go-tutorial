@@ -4,16 +4,6 @@ Go's function declaration uses the func keyword, and the dev can specify input a
 
 ##### Syntax
 
-Typescript
-```ts
-function functionName(arg0: Arg1Type, ... ,
-
-argN: ArgNType): ReturnType {
-
-//Function code goes here...
-
-}
-```
 Go
 ```go
 func functionName(arg0 Arg1Type, ... ,

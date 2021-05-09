@@ -5,42 +5,6 @@ Like C-like langauges and TS, Go supports switch-case statements, configured wit
 #### Switch with Expression
 
 ##### Syntax
-
-Typescript
-```ts
-switch (expression) {
-
-case x:
-
-// Do in case x...
-
-break
-
-case y:
-
-// Do in case y...
-
-break
-
-case z:
-
-// Do in case z...
-
-break
-
-.
-
-.
-
-.
-
-default:
-
-//Do when no other case is satisfied ...
-
-}
-```
-Go
 ```go
 switch expression {
 
@@ -101,41 +65,6 @@ Like switch(true) in other languages, using switch in Go without an expression c
 
 ##### Syntax
 
-Typescript
-```ts
-switch (true) {
-
-case condition1:
-
-...
-
-break
-
-case condition2:
-
-...
-
-break
-
-case condition3:
-
-...
-
-break
-
-.
-
-.
-
-.
-
-default:
-
-...
-
-}
-```
-Golang
 ```go
 switch {
 
