@@ -1,4 +1,5 @@
 Sample code link: ([https://repl.it/@jjoco/go-interfaces](https://repl.it/@jjoco/go-interfaces))
+### Writing and Implementing Interfaces
 
 Syntax
 
@@ -123,7 +124,7 @@ func handleReader(r io.Reader){
 ```
 Structs that implement io.Reader must implement the Read(p []byte) (n int, err error) method, such as *os.File and *bytes.Buffer Since these structs have the Read method and the handleReader function only cares that the input struct implements the Read method, handleReader can handle both *os.File and *bytes.Buffer inputs without compilation error. Of course, there are many more structs that implement the io.Reader interface, and handleReader can handle inputs of each struct without compilation error.
 
-#### Empty Interface
+### Empty Interface
 
 An empty interface contains zero methods. Since every type implements at least zero methods, the empty interface can be used as an "any" type, if the developer uncertain about the types of a function, map valueType, etc. For example, any map, slice, struct implement at least zero methods; thus, they implement the empty interface.
 

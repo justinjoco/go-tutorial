@@ -19,7 +19,8 @@ exampleArr[index] = value
 
 literalArr := [n]elementType {element1, element2, ..., elementN}
 ```
-##### Example
+
+Example
 ```go
 var boolArr [2]bool
 
@@ -98,7 +99,7 @@ Slices have useful methods that a dev can use
 
 `append(slice, newElements...)` => returns a slice that contains elements from newElements added into input slice
 
-##### Append example:
+**Append example**
 ```go
 appendSlice := []int{3, 4, 1}
 
@@ -117,7 +118,7 @@ Notes
 
 `copy(destSlice, srcSlice)` => copies elements from srcSlice into destSlice; returns nothing
 
-##### Copy example:
+**Copy example**
 ```go
 origSlice := []int{4,3,2}
 

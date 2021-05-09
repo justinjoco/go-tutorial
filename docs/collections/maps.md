@@ -117,7 +117,7 @@ if !ok{
 
 }
 ```
-##### Example:
+Example:
 
 //Given: "king" and its value don't exist in cardMap
 ```go

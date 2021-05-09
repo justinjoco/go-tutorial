@@ -1,5 +1,6 @@
 
 Sample code link: ([https://repl.it/@jjoco/go-methods](https://repl.it/@jjoco/go-methods))
+### Writing and Using Methods
 Syntax
 
 These are analogous to class methods in OOP languages
@@ -47,7 +48,7 @@ vector := Vector{start, end}
 
 //vector.CalculateLength() == "10"
 ```
-#### Pointer Receivers
+### Pointer Receivers
 
 Let's say I want a method that directly changes the fields within my receiver. You would use pointer receiver syntax, like the following:
 ```go

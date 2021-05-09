@@ -12,7 +12,7 @@ if err != nil {
 ```
 If the function is successful, err would be nil.
 
-##### Example:
+Example
 ```go
 sampleStr := "ffgds"
 
@@ -30,7 +30,7 @@ fmt.Println(strToInt)
 
 // "exit status 1"
 ```
-#### Ignoring error
+**Ignoring errors**
 
 If you're feeling ambitious, you can certainly skip error handling of a function like below using `_`:
 ```go

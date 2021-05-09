@@ -63,7 +63,7 @@ for {
 
 }
 ```
-##### Example: Reads user input in terminal, forever
+Example: Reads user input in terminal, forever
 ```go
 //Imports "bufio" and "os" packages to parse and read user input in terminal
 

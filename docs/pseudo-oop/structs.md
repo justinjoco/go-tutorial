@@ -109,7 +109,7 @@ customCircle := Circle{4}
 
 // "Radius = 4.000000"
 ```
-##### Pointers and Structs
+#### Pointers and Structs
 
 A dev can use a struct pointer similarly to any other pointer. They function similarly as well, as shown in the following Pass by Value and Pass by Pointer comparison.
 

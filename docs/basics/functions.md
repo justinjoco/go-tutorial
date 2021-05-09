@@ -32,7 +32,7 @@ return math.Sqrt(math.Pow(x,2) + math.Pow(y,2))
 
 The defer keyword is used to run a statement after the current function has returned. You might want to use this if, for example, you had a port listener and you wanted to close it after a function returns.
 
-##### Sample:
+Sample:
 ```go
 func testDefer(){
 

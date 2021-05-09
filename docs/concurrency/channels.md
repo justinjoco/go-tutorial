@@ -35,7 +35,7 @@ readVar <- channel
 ```
 - The front of channel is getting read into declared variable readVar
 
-##### Non-buffered example:
+**Non-buffered example**
 
 - A go routine is writing into nonBufferedChannel and has a receive in the main goroutine
 ```go
@@ -63,7 +63,7 @@ fmt.Println("Done")
 ```
 This will not run correctly because there is no immediate receiver (eg a concurrent receiver) for the send into messages
 
-##### Buffered Examples
+**Buffered examples**
 ```go
 messages := make(chan string, 2)
 
@@ -153,7 +153,8 @@ for elem := range channel {
 
 }
 ```
-##### Example:
+
+**Example**
 
 The below function writes intermediate products into the go channel, and closes the channel once its done.
 ```go
@@ -228,7 +229,7 @@ default:
   - Blocking Send/Receive: Without default, select waits until something can be read from channel or written into it
   - Non-Blocking Send/Receive: With default, select does not wait for a send or receive case to be satisfied
 
-##### Example
+**Example**
 ```go
 channelSize := 3
 

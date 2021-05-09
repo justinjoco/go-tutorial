@@ -37,7 +37,7 @@ Syntax notes
 - No break after each case
 - No parentheses around expression
 
-##### Example:
+Example:
 ```go
 color := "red"
 
