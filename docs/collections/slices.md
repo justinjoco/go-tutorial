@@ -5,7 +5,7 @@ Arrays in Go are similar to those in C-like languages. They are of fixed size an
 
 Hence, they are not nearly as used as often as slices, which we will cover in the next section. But, if you want to use them, creating, reading, and writing to arrays are very similar to that in other languages.
 
-##### Syntax:
+Syntax:
 ```go
 //Initalized via regular assignment
 
@@ -187,7 +187,7 @@ fmt.Println("element = ", element)
 
 A slice can be created from a previously created array or index by using the following syntax. The slicing syntax is very similar to that of getting list elements via range indices in Python.
 
-##### Syntax
+Syntax
 
 - `exampleArrOrSlice[:end]` => gets a slice of elements from beginning of exampleArrOrSlice until indexend (excluding element at index end)
 - `exampleArrOrSlice[start:]` => gets a slice of elements starting from index start (inclusive) until the end of exampleArrOrSlice

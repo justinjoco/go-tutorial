@@ -2,7 +2,7 @@ Sample code link: ([https://repl.it/@jjoco/go-functions](https://repl.it/@jjoco/
 
 Go's function declaration uses the func keyword, and the dev can specify input and output parameter types.
 
-##### Syntax
+Syntax
 
 Go
 ```go

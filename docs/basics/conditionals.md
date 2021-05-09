@@ -4,7 +4,7 @@ Sample code link: ([https://repl.it/@jjoco/go-conditionals](https://repl.it/@jjo
 
 Like all other programming languages, Go has traditional if-else statements; the main difference is the lack of parentheses around the condition:
 
-##### Syntax
+Syntax
 ```go
 if condition {
 
@@ -20,7 +20,8 @@ if condition {
 
 }
 ```
-##### Go example:
+
+Go example
 ```go
 count := 6
 

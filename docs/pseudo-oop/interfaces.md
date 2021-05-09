@@ -1,6 +1,6 @@
 Sample code link: ([https://repl.it/@jjoco/go-interfaces](https://repl.it/@jjoco/go-interfaces))
 
-#### Syntax
+Syntax
 
 Interfaces are method blueprints and follow the syntax:
 ```go

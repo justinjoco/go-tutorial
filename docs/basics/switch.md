@@ -4,7 +4,7 @@ Like C-like langauges and TS, Go supports switch-case statements, configured wit
 
 #### Switch with Expression
 
-##### Syntax
+Syntax
 ```go
 switch expression {
 
@@ -63,7 +63,7 @@ fmt.Println("Stop")
 
 Like switch(true) in other languages, using switch in Go without an expression can be used as a cleaner if-else statement, especially with many conditions.
 
-##### Syntax
+Syntax
 
 ```go
 switch {
@@ -97,7 +97,7 @@ Syntax notes:
 - No break after each case
 - No true expression needed in switch
 
-##### Go Example:
+Go example
 ```go
 grade := 71
 

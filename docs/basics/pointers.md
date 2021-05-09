@@ -64,6 +64,6 @@ From the above, note that in the Pass By Value case, a copy of k is passed into 
 
 However, in the Pass By Pointer case, the address of l is passed into doubleByPointer, which doubles the integer that is stored in that memory address. As a result, the main function observes l double.
 
-#### Pointers to Pointers
+### Pointers to Pointers
 
 A developer can set a variable to be pointers to other pointers. For example, if I want to make a pointer to a pointer (double pointer), one can declare var doublePointer `**int`. It follows that one can declare a triple pointer (pointer to a double pointer) like var triplePointer `***int`, and so on and so forth.

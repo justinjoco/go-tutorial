@@ -47,7 +47,7 @@ radius float64
 
 Similar to creating a new class instance in OOP languages, a dev can create a new variable of your customized struct without extra keywords.
 
-##### Syntax
+Syntax
 ```go
 /*Declaring new type variable*/
 

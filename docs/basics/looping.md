@@ -55,7 +55,7 @@ accumulator += 1
 
 Even though there are no while loops in Go, a developer can write infinite loops by using a for loop with no condition, like the following:
 
-##### Syntax
+Syntax
 ```go
 for {
 

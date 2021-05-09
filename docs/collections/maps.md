@@ -95,7 +95,7 @@ Key: queen ; Value: 12
 
 There is an optional second return value when reading from a map that tells the dev if a key-value pair exists.
 
-##### Syntax
+Syntax
 ```go
 value, ok := someMap[key]
 

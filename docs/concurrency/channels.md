@@ -201,7 +201,7 @@ The main function uses range in order to iterate through all the values in the c
 
 A go routine that uses select waits until it has read or written to a specified channel.
 
-##### Syntax:
+Syntax:
 ```go
 select {
 

@@ -1,6 +1,6 @@
 
 Sample code link: ([https://repl.it/@jjoco/go-methods](https://repl.it/@jjoco/go-methods))
-#### Syntax
+Syntax
 
 These are analogous to class methods in OOP languages
 ```go
