@@ -1,4 +1,4 @@
-### Looping ([https://repl.it/@jjoco/go-looping](https://repl.it/@jjoco/go-looping))
+Sample code link: ([https://repl.it/@jjoco/go-looping](https://repl.it/@jjoco/go-looping))
 
 #### Traditional For-Looping
 
@@ -7,16 +7,16 @@ Like many other languages, Go supports traditional for-looping. The caveat is th
 Syntax
 
 Typescript
-
-for (let i = start; i \&lt; end; i+=increment ){
+```ts
+for (let i = start; i < end; i+=increment ){
 
 //Do stuff each iteration
 
 }
-
+```
 Golang
-
-for i := start ; i \&lt; end ; i += increment {
+```go
+for i := start ; i < end ; i += increment {
 
 //Do stuff each iteration
 
@@ -26,50 +26,50 @@ Go example:
 
 factorial := 1
 
-for i:=1 ; i \&lt;= 5 ; i++ {
+for i:=1 ; i <= 5 ; i++ {
 
-factorial \*= i
+factorial *= i
 
 }
 
-//Output = &quot;5! = 120&quot;
-
-#### &quot;While&quot; For-Loops
+//Output = "5! = 120"
+```
+#### "While" For-Loops
 
 Unlike many other languages, Go does not have while loops; instead, for loops can be used to replace while loops by using the following syntax.
 
 Syntax
 
 Typescript
-
+```ts
 while (condition){
 
 //Do stuff each iteration
 
 }
-
+```
 Go
-
+```go
 for condition {
 
 //Do stuff each iteration
 
 }
-
-- while (condition) =\&gt; for condition with no parentheses around condition
+```
+- while (condition) => for condition with no parentheses around condition
 
 Example:
-
+```go
 accumulator := 0
 
-for accumulator \&lt; 10 {
+for accumulator < 10 {
 
 accumulator += 1
 
 }
 
-// Output = &quot;Accumulator at end of while for-loop: 10&quot;
-
+// Output = "Accumulator at end of while for-loop: 10"
+```
 #### Infinite Loops
 
 Even though there are no while loops in Go, a developer can write infinite loops by using a for loop with no condition, like the following:
@@ -77,37 +77,36 @@ Even though there are no while loops in Go, a developer can write infinite loops
 ##### Syntax
 
 Typescript
-
+```ts
 while (true){
 
 //Code that runs on each iteration goes here...
 
 }
-
+```
 Go
-
+```go
 for {
 
 // Code that runs on each iteration goes here...
 
 }
-
-- while(true) =\&gt; for
-
+```
 ##### Example: Reads user input in terminal, forever
-
-//Imports &quot;bufio&quot; and &quot;os&quot; packages to parse and read user input in terminal
+```go
+//Imports "bufio" and "os" packages to parse and read user input in terminal
 
 reader := bufio.NewReader(os.Stdin)
 
-fmt.Printf(&quot;Testing Infinite Looping... \n&quot;)
+fmt.Printf("Testing Infinite Looping... \n")
 
-fmt.Printf(&quot;-------------\n&quot;)
+fmt.Printf("-------------\n")
 
 for {
 
-text, \_ := reader.ReadString(&#39;\n&#39;)
+text, _ := reader.ReadString('\n')
 
-fmt.Printf(&quot;Text entered: %s\n&quot;, text)
+fmt.Printf("Text entered: %s\n", text)
 
 }
+```

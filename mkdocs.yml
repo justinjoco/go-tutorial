@@ -18,7 +18,7 @@ nav:
   - Overview: index.md
   - Fundamentals:
     - Basics: 
-      - Building and Running Go Code: basics/building.md
+      - Running Go Programs: basics/building.md
       - Importing Packages: basics/import.md
       - Variables and Assignments: basics/vars.md
       - Conditionals: basics/conditionals.md
@@ -28,8 +28,7 @@ nav:
       - Functions: basics/functions.md
       - Error Handling: basics/errors.md
     - Collections:
-      - Arrays: collections/arrays.md
-      - Slices: collections/slices.md
+      - Arrays and Slices: collections/slices.md
       - Maps: collections/maps.md
     - Structs and Interfaces: 
       - Structs: pseudo-oop/structs.md

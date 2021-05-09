@@ -4,74 +4,62 @@
 
 - Only need a package name in quotes
 
-import &quot;packageName&quot;
-
+```go
+import "packageName"
+```
 #### Importing Multiple Packages
 
 - Encapsulate packages in parentheses
 - Separate packages by newline
-
+```go
 import (
-
-&quot;package1&quot;
-
-&quot;package2&quot;
-
+"package1"
+"package2"
 .
-
 .
-
 .
-
-&quot;packageN&quot;
-
+"packageN"
 )
-
+```
 #### Package Aliasing
 
-- Can alias package names if the developer prefers not to use the package&#39;s full name
+- Can alias package names if the developer prefers not to use the package's full name
 
 Python
-
+```python
 import module1 as alias1, module2 as alias2
+```
 
 Go
-
+```go
 import (
-
-alias1 &quot;package1&quot;
-
-alias2 &quot;package2&quot;
-
+alias1 "package1"
+alias2 "package2"
 )
-
+```
 ## Useful Packages
 
 ### General utility:
 
-- strconv : converts numeric types (bools, ints, floats, etc.) and certain strings types to and from ASCII strings
-- fmt : &quot;implements formatted I/O with functions analogous to C&#39;s printf and scanf. The format &#39;verbs&#39; are derived from C&#39;s but are simpler.&quot;
-- time : &quot;provides functionality for measuring and displaying time&quot;
-- sync &quot;provides basic synchronization primitives such as mutual exclusion locks. &quot;
-- strings : &quot;implements simple functions to manipulate UTF-8 encoded strings.&quot;
+- `strconv` : converts numeric types (bools, ints, floats, etc.) and certain strings types to and from ASCII strings
+- `fmt` : "implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler."
+- `time` : "provides functionality for measuring and displaying time"
+- `sync` "provides basic synchronization primitives such as mutual exclusion locks. "
+- `strings` : "implements simple functions to manipulate UTF-8 encoded strings."
 
 ### Testing
 
-- testing: &quot;provides support for automated testing of Go packages. It is intended to be used in concert with the &quot;go test&quot; command, which automates execution of any function of the form
+- `testing`: "provides support for automated testing of Go packages. It is intended to be used in concert with the `go test` command, which automates Go unit testing
 
-func TestXxx(\*testing.T)
-
-where Xxx does not start with a lowercase letter. The function name serves to identify the test routine.&quot;
-
-- github.com/stretchr/testify/suite : &quot;package provides [testing] functionality that you might be used to from more common object oriented languages. With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with &#39;go test&#39; as per normal
+- `github.com/stretchr/testify/suite` : "package provides [testing] functionality that you might be used to from more common object oriented languages. With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with 'go test' as per normal
 
 ### File I/O
 
-- bufio: &quot;implements buffered I/O. It wraps an io.Reader or io.Writer object, creating another object (Reader or Writer) that also implements the interface but provides buffering and some help for textual I/O.&quot;
-- os : &quot; provides a platform-independent interface to operating system functionality&quot;
+- `bufio`: ;implements buffered I/O. It wraps an io.Reader or io.Writer object, creating another object (Reader or Writer) that also implements the interface but provides buffering and some help for textual I/O."
+- `os` : " provides a platform-independent interface to operating system functionality"
 
 ### Networking
 
-- net : &quot;provides a portable interface for network I/O, including TCP/IP, UDP, domain name resolution, and Unix domain sockets&quot;
-- net/http : &quot;provides HTTP client and server implementations.&quot;
-- github.com/gorilla/mux : &quot;implements a request router and dispatcher for matching incoming requests to their respective handler.&quot;
+- `net` : "provides a portable interface for network I/O, including TCP/IP, UDP, domain name resolution, and Unix domain sockets"
+- `net/http` : "provides HTTP client and server implementations."
+- `github.com/gorilla/mux` : "implements a request router and dispatcher for matching incoming requests to their respective handler."

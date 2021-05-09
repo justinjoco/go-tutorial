@@ -1,4 +1,4 @@
-### Conditionals ([https://repl.it/@jjoco/go-conditionals](https://repl.it/@jjoco/go-conditionals))
+Sample code link: ([https://repl.it/@jjoco/go-conditionals](https://repl.it/@jjoco/go-conditionals))
 
 #### Traditional If, Else-If, Else Statements
 
@@ -7,7 +7,7 @@ Like all other programming languages, Go has traditional if-else statements; the
 ##### Syntax
 
 Typescript:
-
+```ts
 if (condition) {
 
 //Do stuff in first condition ...
@@ -21,9 +21,9 @@ if (condition) {
 //Do stuff if none of the above is satisfied ...
 
 }
-
+```
 Go:
-
+```go
 if condition {
 
 //Do stuff in first condition ...
@@ -37,65 +37,64 @@ if condition {
 //Do stuff if none of the above is satisfied ...
 
 }
-
+```
 ##### Go example:
-
+```go
 count := 6
 
-if count \&lt; 10 {
+if count < 10 {
 
-fmt.Printf(&quot;Count is below 10 at value %d\n&quot;, count)
+fmt.Printf("Count is below 10 at value %d\n", count)
 
 }
 
-// Output = &quot;Count is below 10 at value 6&quot;
+// Output = "Count is below 10 at value 6"
 
 count = 51
 
 if count %2 == 0 {
 
-fmt.Printf(&quot;Count is even!\n&quot;)
+fmt.Printf("Count is even!\n")
 
 } else {
 
-fmt.Printf(&quot;Count is odd!\n&quot;)
+fmt.Printf("Count is odd!\n")
 
 }
 
-//Output = &quot;Count is odd!&quot;
+//Output = "Count is odd!"
 
 count = 25
 
 if count %15 == 0 {
 
-fmt.Printf(&quot;FizzBuzz\n&quot;)
+fmt.Printf("FizzBuzz\n")
 
 } else if count % 5 == 0 {
 
-fmt.Printf(&quot;Buzz\n&quot;)
+fmt.Printf("Buzz\n")
 
 } else if count % 3 == 0 {
 
-fmt.Printf(&quot;Fizz\n&quot;)
+fmt.Printf("Fizz\n")
 
 } else {
 
-fmt.Printf(&quot;NoneOfTheAbove\n&quot;)
+fmt.Printf("NoneOfTheAbove\n")
 
 }
 
-//Output = &quot;Buzz&quot;
-
+//Output = "Buzz"
+```
 #### If with Short Assignment
 
 In Go, the user can assign a variable and condition on that variable on the same line (separated by a ;), like the following
+```go
+if shortStatementInt := 32; shortStatementInt > 30{
 
-if shortStatementInt := 32; shortStatementInt \&gt; 30{
-
-fmt.Printf(&quot;shortStatementInt is above 30!\n&quot;)
+fmt.Printf("shortStatementInt is above 30!\n")
 
 }
-
-//Output = &quot;shortStatementInt is above 30!&quot;
-
-In the above example, shortStatementInt is assigned, then evaluated in the condition following the ;
+//Output = "shortStatementInt is above 30!"
+```
+In the above example, shortStatementInt is assigned, then evaluated in the condition following the `;`

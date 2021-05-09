@@ -1,4 +1,4 @@
-### Switch-Case ([https://repl.it/@jjoco/go-switch-case](https://repl.it/@jjoco/go-switch-case))
+Sample code link: ([https://repl.it/@jjoco/go-switch-case](https://repl.it/@jjoco/go-switch-case))
 
 Like C-like langauges and TS, Go supports switch-case statements, configured with or without an expression to evaluate cases:
 
@@ -7,7 +7,7 @@ Like C-like langauges and TS, Go supports switch-case statements, configured wit
 ##### Syntax
 
 Typescript
-
+```ts
 switch (expression) {
 
 case x:
@@ -39,9 +39,9 @@ default:
 //Do when no other case is satisfied ...
 
 }
-
+```
 Go
-
+```go
 switch expression {
 
 case x:
@@ -67,34 +67,34 @@ default:
 //Do when no other case is satisfied ...
 
 }
-
+```
 Syntax notes
 
 - No break after each case
 - No parentheses around expression
 
 ##### Example:
-
-color := &quot;red&quot;
+```go
+color := "red"
 
 switch color {
 
-case &quot;green&quot;:
+case "green":
 
-fmt.Println(&quot;Go&quot;)
+fmt.Println("Go")
 
-case &quot;yellow&quot;:
+case "yellow":
 
-fmt.Println(&quot;Slow&quot;)
+fmt.Println("Slow")
 
 default:
 
-fmt.Println(&quot;Stop&quot;)
+fmt.Println("Stop")
 
 }
 
-//Output = &quot;Stop&quot;
-
+//Output = "Stop"
+```
 #### Switch used as a Long If-Else
 
 Like switch(true) in other languages, using switch in Go without an expression can be used as a cleaner if-else statement, especially with many conditions.
@@ -102,7 +102,7 @@ Like switch(true) in other languages, using switch in Go without an expression c
 ##### Syntax
 
 Typescript
-
+```ts
 switch (true) {
 
 case condition1:
@@ -134,9 +134,9 @@ default:
 ...
 
 }
-
+```
 Golang
-
+```go
 switch {
 
 case condition1:
@@ -162,42 +162,43 @@ default:
 ...
 
 }
-
+```
 Syntax notes:
 
 - No break after each case
 - No true expression needed in switch
 
 ##### Go Example:
-
+```go
 grade := 71
 
-letterGrade := &quot;&quot;
+letterGrade := ""
 
 switch {
 
-case grade \&gt; 90:
+case grade > 90:
 
-letterGrade = &quot;A&quot;
+letterGrade = "A"
 
-case grade \&gt; 80:
+case grade > 80:
 
-letterGrade = &quot;B&quot;
+letterGrade = "B"
 
-case grade \&gt; 70:
+case grade > 70:
 
-letterGrade = &quot;C&quot;
+letterGrade = "C"
 
-case grade \&gt; 65:
+case grade > 65:
 
-letterGrade = &quot;D&quot;
+letterGrade = "D"
 
 default:
 
-letterGrade = &quot;F&quot;
+letterGrade = "F"
 
 }
 
-fmt.Printf(&quot;Your grade is %s\n&quot;, letterGrade)
+fmt.Printf("Your grade is %s\n", letterGrade)
 
-//Output = &quot;Your grade is C&quot;
+//Output = "Your grade is C"
+```
