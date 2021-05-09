@@ -38,7 +38,8 @@ nav:
   - Concurrency:
     - Goroutines: concurrency/goroutines.md
     - Channels: concurrency/channels.md
-  
+
+
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true

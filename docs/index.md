@@ -43,3 +43,13 @@ Compared to other languages, some say it is a “better version of C” because 
 - No generics implementation yet
 - Compile-time strictness can be annoying
 - Not at lot of other in-built data structures besides arrays, slices, maps
+
+## Useful Links
+
+- A Tour of Go: [https://tour.golang.org/welcome/1](https://tour.golang.org/welcome/1)
+
+- Go by Example: [https://gobyexample.com/](https://gobyexample.com/)
+
+- Repl.it IDE: [https://repl.it/](https://repl.it/)
+
+- Golang Blog: [https://blog.golang.org/](https://blog.golang.org/)

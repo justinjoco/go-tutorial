@@ -1,0 +1,77 @@
+## Advanced: Concurrency
+
+Go&#39;s concurrency features are one of its main selling points over its competitors. One, reading and writing concurrent programs is very easy. The &quot;threads&quot; in Go &quot;go routines&quot;, and these are lightweight threads with small memory overhead. For example, a machine can run thousands of threads at a time, but that same machine can run millions of go routines. In addition, there is no need to import an extraneous package since concurrency is a core, primitive feature of the languages.
+
+### Go Routines ([https://repl.it/@jjoco/go-routines](https://repl.it/@jjoco/go-routines))
+
+Go routines are functions that run concurrently from whichever function calls it. These are somewhat analogous to threads of other languages, though each is implemented differently under the hood.
+
+The following diagram demonstrates worker go routines spawned from the main go routine.
+
+![](RackMultipart20210429-4-9wxods_html_a253b7c286a60556.png)
+
+To starting a new goroutine, use the go keyword
+
+go functionName(args)
+
+Example:
+
+func countFromStartToEnd(name string, start int, end int, incr int){
+
+for i := start ; i \&lt; end ; i += incr {
+
+fmt.Println(name, &quot; i = &quot;, i)
+
+time.Sleep(time.Millisecond)
+
+}
+
+}
+
+Main Go code:
+
+go countFromStartToEnd(&quot;Goroutine1&quot;, 0, 5, 1)
+
+go countFromStartToEnd(&quot;Goroutine2&quot;, 0, 5, 1)
+
+countFromStartToEnd(&quot;Main&quot;, 0, 5, 1)
+
+time.Sleep(5\*time.Second)
+
+fmt.Println(&quot;Finished&quot;)
+
+Sample console output:
+
+Main i = 0
+
+Goroutine2 i = 0
+
+Goroutine1 i = 0
+
+Goroutine2 i = 1
+
+Main i = 1
+
+Goroutine1 i = 1
+
+Main i = 2
+
+Goroutine2 i = 2
+
+Goroutine1 i = 2
+
+Goroutine1 i = 3
+
+Goroutine2 i = 3
+
+Main i = 3
+
+Goroutine1 i = 4
+
+Goroutine2 i = 4
+
+Main i = 4
+
+Finished
+
+- Function calls without the go keyword will be ran in the current goroutine
