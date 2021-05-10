@@ -25,11 +25,6 @@ import (
 
 - Can alias package names if the developer prefers not to use the package's full name
 
-Python
-```python
-import module1 as alias1, module2 as alias2
-```
-
 Go
 ```go
 import (
