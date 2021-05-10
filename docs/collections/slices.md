@@ -8,28 +8,22 @@ Hence, they are not nearly as used as often as slices, which we will cover in th
 Syntax:
 ```go
 //Initalized via regular assignment
-
 var exampleArr [arrSize]elementType
 
 //Modifying array element
-
 exampleArr[index] = value
 
 //Literal declared with short assignment
-
 literalArr := [n]elementType {element1, element2, ..., elementN}
 ```
 
 Example
 ```go
 var boolArr [2]bool
-
 boolArr[0] = true
-
 //boolArr == [true false]
 
 floatArr := [4]float64 {1.23, 4.5, 6.78, 9.0}
-
 //floatArr == [1.23 4.5 6.78 9]
 ```
 ### Slices: Dynamically-Sized Arrays 
@@ -48,17 +42,13 @@ If we take a look into a slice's internals, it contains a pointer to an actual a
 One can create a slice similar to creating an array, but you don't specify the size at compile-time:
 ```go
 var slice0 []int
-
 // slice0 == nil
 
 slice1 := []int{}
-
 // slice1 == []
 
 //This is functionally identical to slice1's declaration
-
 slice2 := make([]int, 0)
-
 // slice2 == []
 ```
 Use `make([]elementType, len, cap)` to create a slice that contains elements of type elementType whose internal array's first len elements are memory-allocated
@@ -78,15 +68,11 @@ strLiteralSlice := []string {"this", "is", "a", "test"}
 Reading and writing slice elements is similar to doing so to arrays.
 ```go
 //Setting Element
-
 strLiteralSlice[3] = "shoe"
-
 // strLiteralSlice = [this is a shoe]
 
 //Reading Element
-
 j := strLiteralSlice[2]
-
 // j == "a"
 ```
 #### Slice Methods
@@ -102,13 +88,10 @@ Slices have useful methods that a dev can use
 **Append example**
 ```go
 appendSlice := []int{3, 4, 1}
-
 //"Before Appending [3 4 1]"
 
 appendSlice = append(appendSlice, 23, 21, 43)
-
 appendSlice = append(appendSlice, []int{3,2,1}...)
-
 //"After Appending [3 4 1 23 21 43 3 2 1]"
 ```
 Notes
@@ -121,11 +104,8 @@ Notes
 **Copy example**
 ```go
 origSlice := []int{4,3,2}
-
 copySlice := make([]int, len(origSlice))
-
 copy(copySlice, origSlice)
-
 //"Original Slice : [4 3 2] ; Copy Slice : [4 3 2]""
 ```
 #### Iterating through a Slice
@@ -133,12 +113,8 @@ copy(copySlice, origSlice)
 You can certainly iterate through an slice like in other languages by using the slice's indices. However, one can use the range keyword to iterate through a slice's indices and elements simultaneously without using traditional array. This is very similar to using the enumerate function in Python.
 
 ```go
-// element == exampleSlice[i]
-
 for index, element := range exampleSlice {
-
-Do stuff with index or element
-
+    // Do stuff with index or element
 }
 ```
 Example:
@@ -146,39 +122,26 @@ Example:
 Go code
 ```go
 iterSlice := []string{"baseball", "basketball", "soccer", "hockey", "football"}
-
 //Use if both index and element are needed
 
 for index, element := range iterSlice {
-
-fmt.Println("index = ", index)
-
-fmt.Println("element = ", element)
-
+    fmt.Println("index = ", index)
+    fmt.Println("element = ", element)
 }
 
 //Next two loops are the same, essentially
-
 //Use if knowing the element value is not needed
-
 for index, _ := range iterSlice {
-
-fmt.Println("index = ", index)
-
+    fmt.Println("index = ", index)
 }
 
 for index := range iterSlice {
-
-fmt.Println("index = ", index)
-
+    fmt.Println("index = ", index)
 }
 
 //Use the index is not needed
-
 for _, element := range iterSlice {
-
-fmt.Println("element = ", element)
-
+    fmt.Println("element = ", element)
 }
 ```
 
@@ -199,14 +162,11 @@ Example:
 intSlice := []int{1, 2, 3, 4, 5, 6}
 
 beginIntSlice := intSlice[:2]
-
-middleIntSlice := intSlice[2:4]
-
-endIntSlice := intSlice[4:]
-
 // beginIntSlice == [1 2]
 
+middleIntSlice := intSlice[2:4]
 // middleIntSlice == [3 4]
 
+endIntSlice := intSlice[4:]
 // endIntSlice == [5 6]
 ```

@@ -11,21 +11,17 @@ Regular
 var iPtr *int
 
 i := 42
-
 iPtr = &i
 
 fmt.Println(*iPtr)
-
 //Output = "42"
 ```
 Short Assignment
 ```go
 j := 24
-
 jPtr := &j
 
 fmt.Println(*jPtr)
-
 // Output = "24"
 ```
 ### Pass by Value vs. Pass By Pointer

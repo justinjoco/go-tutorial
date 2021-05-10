@@ -19,27 +19,19 @@ Sample code link: [https://repl.it/@jjoco/go-variables-and-assignment](https://r
 At compile time, the developer can specify the type of the variable declared using the var keyword. 
 ```go
 var notAssignedInt int
-
 fmt.Printf("Not assigned int: %d\n", notAssignedInt) //%d decimal
-
 //Output = "Not assigned int: 0"
 
 var notAssignedVar
-
 fmt.Println("Not assigned var: ", notAssignedVar)
-
 //Compile error => type is not defined for "notAssignedVar"
 
 var assignedBool1 bool = true
-
 fmt.Printf("Assigned bool = %t\n", assignedBool1) //%t boolean value
-
 //Output = "Assigned bool = true"
 
 var assignedBool2 = false
-
 fmt.Printf("Assigned bool = %t\n", assignedBool2) //%t boolean value
-
 //Output = "Assigned bool = false"
 ```
 
@@ -57,23 +49,9 @@ Developers can directly assign a variable using :=, and the compiler will infer 
 
 Note: it may not be in good practice to use shorthand in industry when maintaining type safety, but it will be used in this tutorial for cogency.
 
-Python
-```python
-shortAssignedString = "short"
-
-print("Short assigned string: {}".format(shortAssignedString))
-
-//Output = "Short assigned string: short"
-```
-
-Golang
 ```go
 shortAssignedString := "short"
-
-fmt.Printf("Short assigned string: %s\n",
-
-shortAssignedString) //%s string
-
+fmt.Printf("Short assigned string: %s\n",shortAssignedString) //%s string
 //Output= "Short assigned string: short"
 ```
 
@@ -82,11 +60,9 @@ shortAssignedString) //%s string
 Similar to other languages, the developer can assign multiple variables at once using regular or short assigning.
 ```go
 var multAssignedInt1, multAssignedInt2 = 3, 4
-
 // Output: "multAssignedInt1 = 3, multAssignedInt2 = 4"
 
 shortAssignedString1, shortAssignedString2 := "hello", "world"
-
 // Output: "shortAssignedString1 = hello, shortAssignedString2 = world"
 ```
 #### Constants
@@ -94,7 +70,6 @@ shortAssignedString1, shortAssignedString2 := "hello", "world"
 Constants can be assigned via const keyword, and camelCase is generally used as the naming convention; PascalCase when exporting a const.
 ```go
 const ConstantNumber = 10
-
 // Output = "Constant Number: 10"
 ```
 Unfortunately, constants cannot be assigned via := short assignment syntax

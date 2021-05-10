@@ -3,11 +3,8 @@ Sample code link: ([https://repl.it/@jjoco/go-error-handling](https://repl.it/@j
 Some functions return an error type
 ```go
 sampleVar, err := canReturnErrorFct(args)
-
 if err != nil {
-
-//Do something if there's an error
-
+    //Do something if there's an error
 }
 ```
 If the function is successful, err would be nil.
@@ -15,19 +12,14 @@ If the function is successful, err would be nil.
 Example
 ```go
 sampleStr := "ffgds"
-
 strToInt, err := strconv.Atoi(sampleStr)
 
 if err != nil {
-
-log.Fatal(err)
-
+    log.Fatal(err)
 }
 
 fmt.Println(strToInt)
-
 // Output = "2020/10/22 19:39:38 strconv.Atoi: parsing "ffgds": invalid syntax"
-
 // "exit status 1"
 ```
 **Ignoring errors**

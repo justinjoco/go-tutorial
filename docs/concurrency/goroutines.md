@@ -13,27 +13,19 @@ go functionName(args)
 Example:
 ```go
 func countFromStartToEnd(name string, start int, end int, incr int){
-
-for i := start ; i < end ; i += incr {
-
-fmt.Println(name, " i = ", i)
-
-time.Sleep(time.Millisecond)
-
-}
-
+    for i := start ; i < end ; i += incr {
+        fmt.Println(name, " i = ", i)
+        time.Sleep(time.Millisecond)
+    }
 }
 ```
 Main Go code:
 ```go
 go countFromStartToEnd("Goroutine1", 0, 5, 1)
-
 go countFromStartToEnd("Goroutine2", 0, 5, 1)
-
 countFromStartToEnd("Main", 0, 5, 1)
 
 time.Sleep(5*time.Second)
-
 fmt.Println("Finished")
 
 /*

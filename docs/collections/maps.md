@@ -9,11 +9,9 @@ A dev can use literal-based syntax or the make function to allocate memory for a
 exampleMap := make(map[KeyType]ValueType)
 
 //Functionally identical to using the make function
-
 otherExampleMap := map[KeyType]ValueType{}
 
 //Use interface{} if the ValueType can be anything
-
 anyValueMap := make(map[string]interface{})
 ```
 - KeyType must be a type that is comparable => "boolean, numeric, string, pointer, channel, and interface types, and structs or arrays that contain only those types"
@@ -40,13 +38,11 @@ cardMap["king"] = 13
 Reading Map Element
 ```go
 j := cardMap["queen"]
-
 //j == 12
 ```
 Deleting Map Element
 ```go
 delete(cardMap, "king")
-
 //cardMap == map[ace:1 jack:11 queen:12]
 ```
 #### Map Literals
@@ -54,13 +50,9 @@ delete(cardMap, "king")
 Use map literals to define the initial elements in a map.
 ```go
 trafficLightMap := map[string]string{
-
-"red": "stop",
-
-"green": "go",
-
-"yellow": "slow",
-
+  "red": "stop",
+  "green": "go",
+  "yellow": "slow",
 }
 ```
 #### Iterating Through Maps
@@ -68,9 +60,7 @@ trafficLightMap := map[string]string{
 Similar in syntax to slice iteration, a dev can use range to iterate through the key-value pairs in a map.
 ```go
 for key, value := range exampleMap{
-
-//... Process key and/or value
-
+  //Process key and/or value
 }
 ```
 - Can use `_` in place of key or value if they aren't needed
@@ -80,9 +70,7 @@ Example:
 Go code
 ```go
 for key, value := range cardMap{
-
-fmt.Println("Key:", key, "; Value:", value)
-
+  fmt.Println("Key:", key, "; Value:", value)
 }
 /*
 Console output
@@ -100,9 +88,7 @@ Syntax
 value, ok := someMap[key]
 
 if !ok{
-
-//Do something if there is no key-value pair
-
+  //Do something if there is no key-value pair
 }
 ```
 ##### Checking for key-value existence
@@ -112,9 +98,7 @@ If you don't care for retrieving the value, one can just check the existence of 
 _, ok := someMap[key]
 
 if !ok{
-
-//Do something if there is no key-value pair
-
+  //Do something if there is no key-value pair  
 }
 ```
 Example:
@@ -124,10 +108,7 @@ Example:
 k, ok := cardMap["king"]
 
 if !ok{
-
-fmt.Println("king isn't there")
-
+  fmt.Println("king isn't there")
 }
-
 //Output = "king isn't there"
 ```

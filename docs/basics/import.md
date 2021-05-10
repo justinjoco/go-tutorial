@@ -13,12 +13,12 @@ import "packageName"
 - Separate packages by newline
 ```go
 import (
-"package1"
-"package2"
-.
-.
-.
-"packageN"
+    "package1"
+    "package2"
+    .
+    .
+    .
+    "packageN"
 )
 ```
 #### Package Aliasing
@@ -33,8 +33,8 @@ import module1 as alias1, module2 as alias2
 Go
 ```go
 import (
-alias1 "package1"
-alias2 "package2"
+    alias1 "package1"
+    alias2 "package2"
 )
 ```
 ## Useful Packages

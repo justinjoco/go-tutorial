@@ -7,17 +7,11 @@ Like all other programming languages, Go has traditional if-else statements; the
 Syntax
 ```go
 if condition {
-
-//Do stuff in first condition ...
-
+    //Do stuff in first condition ...
 } else if otherCondition {
-
-//Do stuff in otherCondition...
-
+    //Do stuff in otherCondition...
 } else {
-
-//Do stuff if none of the above is satisfied ...
-
+    //Do stuff if none of the above is satisfied ...
 }
 ```
 
@@ -26,47 +20,28 @@ Go example
 count := 6
 
 if count < 10 {
-
-fmt.Printf("Count is below 10 at value %d\n", count)
-
+    fmt.Printf("Count is below 10 at value %d\n", count)
 }
-
 // Output = "Count is below 10 at value 6"
 
 count = 51
-
 if count %2 == 0 {
-
-fmt.Printf("Count is even!\n")
-
+    fmt.Printf("Count is even!\n")
 } else {
-
-fmt.Printf("Count is odd!\n")
-
+    fmt.Printf("Count is odd!\n")
 }
-
 //Output = "Count is odd!"
 
 count = 25
-
 if count %15 == 0 {
-
-fmt.Printf("FizzBuzz\n")
-
+    fmt.Printf("FizzBuzz\n")
 } else if count % 5 == 0 {
-
-fmt.Printf("Buzz\n")
-
+    fmt.Printf("Buzz\n")
 } else if count % 3 == 0 {
-
-fmt.Printf("Fizz\n")
-
+    fmt.Printf("Fizz\n")
 } else {
-
-fmt.Printf("NoneOfTheAbove\n")
-
+    fmt.Printf("NoneOfTheAbove\n")
 }
-
 //Output = "Buzz"
 ```
 #### If with Short Assignment
@@ -74,9 +49,7 @@ fmt.Printf("NoneOfTheAbove\n")
 In Go, the user can assign a variable and condition on that variable on the same line (separated by a ;), like the following
 ```go
 if shortStatementInt := 32; shortStatementInt > 30{
-
-fmt.Printf("shortStatementInt is above 30!\n")
-
+    fmt.Printf("shortStatementInt is above 30!\n")
 }
 //Output = "shortStatementInt is above 30!"
 ```

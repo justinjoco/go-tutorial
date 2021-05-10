@@ -7,29 +7,17 @@ Like C-like langauges and TS, Go supports switch-case statements, configured wit
 Syntax
 ```go
 switch expression {
-
-case x:
-
-// Do in case x...
-
-case y:
-
-// Do in case y...
-
-case z:
-
-// Do in case z...
-
-.
-
-.
-
-.
-
-default:
-
-//Do when no other case is satisfied ...
-
+    case x:
+        // Do in case x...
+    case y:
+        // Do in case y...
+    case z:
+        // Do in case z...
+    .
+    .
+    .
+    default:
+        //Do when no other case is satisfied ...
 }
 ```
 Syntax notes
@@ -42,19 +30,12 @@ Example:
 color := "red"
 
 switch color {
-
-case "green":
-
-fmt.Println("Go")
-
-case "yellow":
-
-fmt.Println("Slow")
-
-default:
-
-fmt.Println("Stop")
-
+    case "green":
+        fmt.Println("Go")
+    case "yellow":
+        fmt.Println("Slow")
+    default:
+        fmt.Println("Stop")
 }
 
 //Output = "Stop"
@@ -68,28 +49,17 @@ Syntax
 ```go
 switch {
 
-case condition1:
-
-...
-
-case condition2:
-
-...
-
-case condition3:
-
-...
-
-.
-
-.
-
-.
-
-default:
-
-...
-
+    case condition1:
+    ...
+    case condition2:
+    ...
+    case condition3:
+    ...
+    .
+    .
+    .
+    default:
+    ...
 }
 ```
 Syntax notes:
@@ -100,34 +70,21 @@ Syntax notes:
 Go example
 ```go
 grade := 71
-
 letterGrade := ""
 
 switch {
-
-case grade > 90:
-
-letterGrade = "A"
-
-case grade > 80:
-
-letterGrade = "B"
-
-case grade > 70:
-
-letterGrade = "C"
-
-case grade > 65:
-
-letterGrade = "D"
-
-default:
-
-letterGrade = "F"
-
+    case grade > 90:
+        letterGrade = "A"
+    case grade > 80:
+        letterGrade = "B"
+    case grade > 70:
+        letterGrade = "C"
+    case grade > 65:
+        letterGrade = "D"
+    default:
+        letterGrade = "F"
 }
 
 fmt.Printf("Your grade is %s\n", letterGrade)
-
 //Output = "Your grade is C"
 ```
