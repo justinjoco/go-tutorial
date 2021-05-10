@@ -4,8 +4,6 @@ Go's concurrency features are one of its main selling points over its competitor
 
 Go routines are functions that run concurrently from whichever function calls it. These are somewhat analogous to threads of other languages, though each is implemented differently under the hood.
 
-The following diagram demonstrates worker go routines spawned from the main go routine.
-
 To starting a new goroutine, use the go keyword
 ```go
 go functionName(args)
