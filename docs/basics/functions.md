@@ -10,7 +10,7 @@ func functionName(arg0 Arg1Type, ... ,argN ArgNType) ReturnType {
   //Function code goes here...
 }
 ```
-- Compared to TS:
+Syntax notes:
   - function => func
   - No colons between variable name and its type
 

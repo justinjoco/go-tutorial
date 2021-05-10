@@ -15,7 +15,7 @@ type TypeName struct {
   .
 }
 ```
-- Compared to TS:
+- Syntax notes:
   - Use of struct keyword instead of = when making a new type
   - No classes or objects in Go
   - No colon between field name and its type
@@ -49,7 +49,7 @@ var structCustom2 = StructName{args}
 /*Short Assignment*/
 structShort := StructName{args}
 ```
-- Compared to TS:
+- Syntax notes:
   - No use of new keyword
   - Use of curly brackets {} instead of parentheses ()
   - No colons when declaring type
