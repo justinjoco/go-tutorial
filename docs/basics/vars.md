@@ -1,6 +1,7 @@
 Sample code link: [https://repl.it/@jjoco/go-variables-and-assignment](https://repl.it/@jjoco/go-variables-and-assignment)
 
-#### Primitive Types
+### Primitive Types
+Like other programming languages, Go has primitive data types:
 
 - Boolean: bool
 - String: string
@@ -12,11 +13,12 @@ Sample code link: [https://repl.it/@jjoco/go-variables-and-assignment](https://r
 - Complex numbers: complex64, complex128
 - **Void is not a type**
 
-***Note: int and uint are "are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems"***
+***Note: int and uint "are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems"***
 
-#### Regular Assignment
+### Regular Assignment
 
-At compile time, the developer can specify the type of the variable declared using the var keyword. 
+At compile time, the developer can specify the type of the variable declared using the `var` keyword. As an FYI, Go's variable naming convention is `snake_case`.
+
 ```go
 var notAssignedInt int
 fmt.Printf("Not assigned int: %d\n", notAssignedInt) //%d decimal
@@ -34,28 +36,25 @@ var assignedBool2 = false
 fmt.Printf("Assigned bool = %t\n", assignedBool2) //%t boolean value
 //Output = "Assigned bool = false"
 ```
+Important notes:
 
-- Notes
   - Only var is used when creating a new variable
   - No colons when specifying a variable's type
   - Uninitialized variables are set to their default "zero" value:
     - Number types (eg ints, unsigned ints, floats, etc.) are set to 0
-    - Boolean types are set to false
-    - String types are set to empty strings ""
+    - Boolean types are set to `false`
+    - String types are set to empty strings `""`
 
-#### Short Assignment
+### Short Assignment
 
-Developers can directly assign a variable using :=, and the compiler will infer what type of variable it is based on what was assigned. This is similar to assigning in Python, where the developer can directly assign a literal to a variable.
-
-Note: it may not be in good practice to use shorthand in industry when maintaining type safety, but it will be used in this tutorial for cogency.
-
+Developers can directly assign a literal to a variable using `:=`, and the compiler will infer what type of variable it is based on what was assigned. 
 ```go
 shortAssignedString := "short"
 fmt.Printf("Short assigned string: %s\n",shortAssignedString) //%s string
 //Output= "Short assigned string: short"
 ```
 
-#### Multiple Assignments
+### Multiple Assignments
 
 Similar to other languages, the developer can assign multiple variables at once using regular or short assigning.
 ```go
@@ -65,20 +64,19 @@ var multAssignedInt1, multAssignedInt2 = 3, 4
 shortAssignedString1, shortAssignedString2 := "hello", "world"
 // Output: "shortAssignedString1 = hello, shortAssignedString2 = world"
 ```
-#### Constants
-
-Constants can be assigned via const keyword, and camelCase is generally used as the naming convention; PascalCase when exporting a const.
+### Constants
+Constants can be assigned via the `const` keyword, and camelCase is generally used as the naming convention; PascalCase when exporting a const.
 ```go
 const ConstantNumber = 10
 // Output = "Constant Number: 10"
 ```
 Unfortunately, constants cannot be assigned via := short assignment syntax
 
-#### Operators
+### Operators
 
 Golang supports the same arithmetic, comparison, logical, bitwise, and assignment operators as other C-like languages. They are listed below.
 
-##### Arithmetic
+ **Arithmetic**
 
 - `+` Addition
 - `-` Subtraction
@@ -88,7 +86,7 @@ Golang supports the same arithmetic, comparison, logical, bitwise, and assignmen
 - `++` Increment by 1
 - `--` Decrement by 1
 
-##### Comparison
+ **Comparison**
 
 - `<` Less than
 - `>` Greater than
@@ -97,13 +95,13 @@ Golang supports the same arithmetic, comparison, logical, bitwise, and assignmen
 - `==` Equal to
 - `!=` Not equal to
 
-##### Logical
+ **Logical**
 
 - `&&` Conditional AND
 - `||` Conditional OR
 - `!` NOT
 
-##### Assignment
+ **Assignment**
 
 - `+=` add, then assign
 - `-=` subtract, then assign
@@ -111,7 +109,7 @@ Golang supports the same arithmetic, comparison, logical, bitwise, and assignmen
 - `/=` divide, then assign
 - `%=` modulo, then assign
 
-##### Bitwise
+Bitwise
 
 - `&` Bitwise AND
 - `|` Bitwise OR

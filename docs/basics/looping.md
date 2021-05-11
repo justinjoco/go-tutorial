@@ -1,6 +1,6 @@
 Sample code link: ([https://repl.it/@jjoco/go-looping](https://repl.it/@jjoco/go-looping))
 
-#### Traditional For-Looping
+### Traditional For-Looping
 
 Like many other languages, Go supports traditional for-looping. The caveat is the lack of parentheses around the for statements
 
@@ -17,7 +17,7 @@ for i:=1 ; i <= 5 ; i++ {
 }
 //Output = "5! = 120"
 ```
-#### "While" For-Loops
+### "While" For-Loops
 
 Unlike many other languages, Go does not have while loops; instead, for loops can be used to replace while loops by using the following syntax.
 
@@ -38,7 +38,7 @@ for accumulator < 10 {
 }
 // Output = "Accumulator at end of while for-loop: 10"
 ```
-#### Infinite Loops
+### Infinite Loops
 
 Even though there are no while loops in Go, a developer can write infinite loops by using a for loop with no condition, like the following:
 

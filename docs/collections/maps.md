@@ -2,7 +2,7 @@ Sample code link: ([https://repl.it/@jjoco/go-maps](https://repl.it/@jjoco/go-ma
 
 Go implements map, a key-value data structure similar to Dictionaries in Python and Hashtables/HashMaps in Java.
 
-#### Creating a Map
+### Creating a Map
 
 A dev can use literal-based syntax or the make function to allocate memory for a new map.
 ```go
@@ -18,7 +18,7 @@ anyValueMap := make(map[string]interface{})
 - ValueType can be of any type, including custom structs or other maps
   - use interface{} as your ValueType to have the map's valueType be of anything
 
-#### Reading and Writing Map Elements
+### Reading and Writing Map Elements
 
 Like other languages, one can directly read, write, and delete values from Go maps.
 ```go
@@ -45,7 +45,7 @@ Deleting Map Element
 delete(cardMap, "king")
 //cardMap == map[ace:1 jack:11 queen:12]
 ```
-#### Map Literals
+### Map Literals
 
 Use map literals to define the initial elements in a map.
 ```go
@@ -55,7 +55,7 @@ trafficLightMap := map[string]string{
   "yellow": "slow",
 }
 ```
-#### Iterating Through Maps
+### Iterating Through Maps
 
 Similar in syntax to slice iteration, a dev can use range to iterate through the key-value pairs in a map.
 ```go
@@ -79,7 +79,7 @@ Key: jack ; Value: 11
 Key: queen ; Value: 12
 */
 ```
-#### Getting a Key's Value if the pair exists
+### Getting a Key's Value if the pair exists
 
 There is an optional second return value when reading from a map that tells the dev if a key-value pair exists.
 
@@ -91,7 +91,7 @@ if !ok{
   //Do something if there is no key-value pair
 }
 ```
-##### Checking for key-value existence
+#### Checking for key-value existence
 
 If you don't care for retrieving the value, one can just check the existence of the key-value pair.
 ```go

@@ -2,7 +2,7 @@ Sample code link: ([https://repl.it/@jjoco/go-switch-case](https://repl.it/@jjoc
 
 Like C-like langauges and TS, Go supports switch-case statements, configured with or without an expression to evaluate cases:
 
-#### Switch with Expression
+### Switch with Expression
 
 Syntax
 ```go
@@ -40,7 +40,7 @@ switch color {
 
 //Output = "Stop"
 ```
-#### Switch used as a Long If-Else
+### Switch used as a Long If-Else
 
 Like switch(true) in other languages, using switch in Go without an expression can be used as a cleaner if-else statement, especially with many conditions.
 

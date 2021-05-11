@@ -16,7 +16,7 @@ To run Go code, you need to do the following:
 ### Hello World 
 Sample code link: ([https://repl.it/@jjoco/go-hello-world](https://repl.it/@jjoco/go-hello-world))
 
-You need a main function to run Go program, like other C-like languages, like the following:
+To create a "Hello World" program, you need a main function, like other C-like languages. Take the following example:
 ```Go
 package main
 
@@ -28,9 +28,9 @@ func main(){
 
 ```
 
-**Note**
+**Notes**
 
-1. The first statement in a Go source file must be package name. Executable commands must always use package main.
-2. Use fmt package in order to print out strings to the console
-  - `fmt.Println()` : prints a list of variables to STDOUT with default formatting and inserts spaces between the variables  **and**  appends a new line at the end.
-  - `fmt.Printf()` : allows you to specify the formatting using a format template
+- The first statement in a Go source file must be package name. Executable commands must always use package main.
+- Use `fmt` package in order to print out strings to the console. Here are some important functions:
+    - `fmt.Println(... args)` : prints a list of variables to STDOUT with default formatting and inserts spaces between the variables  **and**  appends a new line at the end.
+    - `fmt.Printf(stringFormat, fields)` : allows you to specify the formatting using a format template

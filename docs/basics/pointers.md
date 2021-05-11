@@ -2,7 +2,7 @@ Sample code link: ([https://repl.it/@jjoco/go-pointers](https://repl.it/@jjoco/g
 
 Pointers essentially points to a place in memory that stores a variable of type T (ie memory address). This is similar to pointers used in C-like languages.
 
-#### Regular vs. Short Assignment
+### Regular vs. Short Assignment
 
 One can define pointers via regular or short assigning, like any other variable. Dereferencing them is identical to that of other languages, eg if iPtr is a pointer, *iPtr dereferences it.
 
@@ -29,7 +29,7 @@ fmt.Println(*jPtr)
 If you intend to change the input variable to a function and have the change be visible from the caller, use pointers.
 
 
-#### Pass by Value
+ **Pass by Value**
 ```go
 //Doubles input 
 func doubleByValue(x int) {
@@ -43,7 +43,7 @@ k := 32
 doubleByValue(k)
 //Output = "After Pass By Value call: 32"  
 ```
-#### Pass by Pointer 
+**Pass by Pointer** 
 ```go
 //Doubles input
 func doubleByPointer(xPtr *int) {

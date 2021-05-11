@@ -1,16 +1,13 @@
-### Importing Packages
+We can import packages into the current Go file.
+### Importing One Package
 
-#### Importing One Package
-
-- Only need a package name in quotes
-
+To import a package, use double quotes, like the following:
 ```go
 import "packageName"
 ```
-#### Importing Multiple Packages
+### Importing Multiple Packages
 
-- Encapsulate packages in parentheses
-- Separate packages by newline
+To import multiple packages at once, encapsulate the list of packages in parentheses, and separate packages by newlines.
 ```go
 import (
     "package1"
@@ -21,18 +18,17 @@ import (
     "packageN"
 )
 ```
-#### Package Aliasing
+### Package Aliasing
 
-- Can alias package names if the developer prefers not to use the package's full name
-
-Go
+If the developer prefers not to use the package's full name, the dev can alias package names :
 ```go
 import (
     alias1 "package1"
     alias2 "package2"
 )
 ```
-## Useful Packages
+### Useful Packages
+I've compiled a list of packages that I found useful for various Go projects I've contributed to:
 
 **General utility**
 
@@ -44,14 +40,14 @@ import (
 
 **Testing**
 
-- `testing`: "provides support for automated testing of Go packages. It is intended to be used in concert with the `go test` command, which automates Go unit testing
+- `testing`: "provides support for automated testing of Go packages. It is intended to be used in concert with the `go test` command, which automates Go unit testing"
 
-- `github.com/stretchr/testify/suite` : "package provides [testing] functionality that you might be used to from more common object oriented languages. With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with 'go test' as per normal
+- `github.com/stretchr/testify/suite` : "provides [testing] functionality that you might be used to from more common object oriented languages. With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with `go test` as per normal"
 
 **File I/O**
 
-- `bufio`: ;implements buffered I/O. It wraps an io.Reader or io.Writer object, creating another object (Reader or Writer) that also implements the interface but provides buffering and some help for textual I/O."
-- `os` : " provides a platform-independent interface to operating system functionality"
+- `bufio`: "implements buffered I/O. It wraps an io.Reader or io.Writer object, creating another object (Reader or Writer) that also implements the interface but provides buffering and some help for textual I/O."
+- `os` : "provides a platform-independent interface to operating system functionality"
 
 **Networking**
 

@@ -1,6 +1,6 @@
 Sample code link: ([https://repl.it/@jjoco/go-conditionals](https://repl.it/@jjoco/go-conditionals))
 
-#### Traditional If, Else-If, Else Statements
+### Traditional If, Else-If, Else Statements
 
 Like all other programming languages, Go has traditional if-else statements; the main difference is the lack of parentheses around the condition:
 
@@ -44,7 +44,7 @@ if count %15 == 0 {
 }
 //Output = "Buzz"
 ```
-#### If with Short Assignment
+### If with Short Assignment
 
 In Go, the user can assign a variable and condition on that variable on the same line (separated by a ;), like the following
 ```go

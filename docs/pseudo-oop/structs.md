@@ -2,7 +2,7 @@ Sample code link: [https://repl.it/@jjoco/go-structs](https://repl.it/@jjoco/go-
 
 Structs are analogous to classes in OOP languages. These are your user-defined types with their own fields.
 
-#### Declaring a Struct
+### Declaring a Struct
 
 Use type and struct to declare a blueprint of your struct.
 
@@ -35,7 +35,7 @@ type Circle struct {
   radius float64
 }
 ```
-#### Using a Struct
+### Using a Struct
 
 Similar to creating a new class instance in OOP languages, a dev can create a new variable of your customized struct without extra keywords.
 
@@ -57,7 +57,7 @@ structShort := StructName{args}
 
 Examples:
 
-##### No input parameters
+#### No input parameters
 
 Fields within structs are zero-valued, if not defined at compile-time.
 ```go
@@ -65,19 +65,19 @@ defaultRect := Rectangle{}
 //Output = "Rectangle object: {0 0}"
 // "Width = 0; Height = 0"
 ```
-##### With input parameters
+#### With input parameters
 ```go
 customRect := Rectangle{2, 4}
 // Output = "Rectangle object: {2 4}"
 // "Width = 2; Height = 4"
 ```
-##### With input parameters specifically defined
+#### With input parameters specifically defined
 ```go
 customRect2 := Rectangle{height: 2, width: 4}
 // Output = "Rectangle object: {4 2}"
 // "Width = 4; Height = 2"
 ```
-##### Using struct not defined in calling file
+#### Using struct not defined in calling file
 ```go
 defaultCircle := Circle{}
 //Output = "Circle Object: {0}"
@@ -87,7 +87,7 @@ customCircle := Circle{4}
 //Output = "Circle Object: {4}"
 // "Radius = 4.000000"
 ```
-#### Pointers and Structs
+### Pointers and Structs
 
 A dev can use a struct pointer similarly to any other pointer. They function similarly as well, as shown in the following Pass by Value and Pass by Pointer comparison.
 

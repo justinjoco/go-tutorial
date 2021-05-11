@@ -30,13 +30,6 @@ floatArr := [4]float64 {1.23, 4.5, 6.78, 9.0}
 Sample code link: [https://repl.it/@jjoco/go-slices](https://repl.it/@jjoco/go-slices)
 
 Slices are essentially dynamic arrays that have several useful methods and offer flexibility that arrays do not. Thus, slices are used much more often than arrays.
-
-##### Slice internal structure
-
-If we take a look into a slice's internals, it contains a pointer to an actual array, and the length and capacity fields relevant to the internal array. In perspective, slices are wrappers of fixed-arrays that dynamically change the properties of their internal arrays.
-
-![](RackMultipart20210429-4-9wxods_html_413b63491413af40.png)
-
 #### Creating a New, Empty Slice
 
 One can create a slice similar to creating an array, but you don't specify the size at compile-time:

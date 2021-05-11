@@ -1,10 +1,7 @@
 Sample code link: ([https://repl.it/@jjoco/go-functions](https://repl.it/@jjoco/go-functions))
 
-Go's function declaration uses the func keyword, and the dev can specify input and output parameter types.
-
-Syntax
-
-Go
+### Declaring Functions
+Go's function declaration uses the `func` keyword, and the dev can specify input and output parameter types.
 ```go
 func functionName(arg0 Arg1Type, ... ,argN ArgNType) ReturnType {
   //Function code goes here...
@@ -14,14 +11,14 @@ Syntax notes:
   - function => func
   - No colons between variable name and its type
 
-##### Example: Get hypotenuse of triangle given leg lengths
+***Example: Get hypotenuse of triangle given leg lengths***
 ```go
 func getHypotenuse(x float64, y float64) float64 {
   return math.Sqrt(math.Pow(x,2) + math.Pow(y,2))
 }
 // Output of getHypotenuse(3, 4) = 5
 ```
-#### Defer
+### Defer
 
 The defer keyword is used to run a statement after the current function has returned. You might want to use this if, for example, you had a port listener and you wanted to close it after a function returns.
 
@@ -34,7 +31,7 @@ func testDefer(){
 //Output = "Called during testDefer() call"
 // "Called after testDefer() returns"
 ```
-#### Variadic Functions
+### Variadic Functions
 
 You can define a function to have a variable amount of arguments (of the same type) like the following:
 ```go

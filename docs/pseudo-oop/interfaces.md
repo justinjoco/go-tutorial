@@ -97,7 +97,7 @@ An empty interface contains zero methods. Since every type implements at least z
 
 Examples:
 
-##### Empty Interface as a ValueType
+**Empty Interface as a ValueType**
 ```go
 sampleMap := make(map[string]interface{})
 
@@ -109,7 +109,7 @@ sampleMap["brooklynn"] = 99
 ```
 In the above example, since strings and integers implement at least zero methods, they implement the empty interface, which allow each type to be added into sampleMap
 
-##### Empty Interface as a function parameter type
+**Empty Interface as a function parameter type**
 ```go
 func printVariable(input interface{}){
     fmt.Println(input)

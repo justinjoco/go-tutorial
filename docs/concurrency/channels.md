@@ -5,7 +5,7 @@ Go channels is the method of communication that allows go routines to talk to ea
 If two go routines were processes, the go channel is the bridge between them:
 
 
-#### Non-Buffered Channels
+### Non-Buffered Channels
 
 By default channels are _unbuffered_, meaning that they will only accept sends (chan <-) if there is a corresponding receive (<- chan) ready to receive the sent value
 
@@ -13,23 +13,23 @@ Syntax:
 ```go
 channel := make(chan ElementType)
 ```
-#### Buffered Channels
+### Buffered Channels
 
 _Buffered channels_ accept a limited number of values without a corresponding receiver for those values. These are much more flexible than unbuffered channels.
 ```go
 channel := make(chan ElementType, channelSize)
 ```
-#### Reading and Writing to Channels
+### Reading and Writing to Channels
 
 The `<-` denotes which way a value is getting written into
 
-##### Writing
+**Writing**
 ```go
 channel <- writeValue
 ```
 - writeValue is getting written into channel
 
-##### Reading
+**Reading**
 ```go
 readVar <- channel
 ```
@@ -68,7 +68,7 @@ fmt.Println(<-messages)
 ```
 - Strings are getting written into the messages channel and read out in a FIFO way
 
-#### Uni-directional Channels
+### Uni-directional Channels
 
 A function can be configured to be able to only read from a given channel or be forced to only write into a channel. This is used for type safety, and it ensures no two go routines can write to the same channel.
 
@@ -117,7 +117,7 @@ fmt.Println(<-pongs)
 2. pong is reading passed message from pings channel and writing passed message into the pongs channel
 3. The main goroutine is reading and printing out passed message from the pongs channel
 
-#### Range and Close
+### Range and Close
 
 A go routine can close a channel if you're completely done with it
 ```go
@@ -165,7 +165,7 @@ Console output
 ```
 The main function uses range in order to iterate through all the values in the closed factorialChannel.
 
-#### Select
+### Select
 
 A go routine that uses select waits until it has read or written to a specified channel.
 

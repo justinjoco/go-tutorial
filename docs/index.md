@@ -28,21 +28,21 @@ Compared to other languages, some say it is a “better version of C” because 
     - Uber
 
 ## Why should I use Go?
-- Very good run-time performance, similar to that of C and C++
-- Designed to be readable like Python or JS
-    - Syntax is like combination of Python, TS, and C
-    - Concurrent programs are very easy to write 
-- Very performant networking and multiprocessing
+- It has very good run-time performance, similar to that of C and C++
+- It is designed to be readable like Python or JS
+    - Its syntax is like combination of Python, TS, and C
+    - Go's concurrent programs are very easy to write 
+- It's very performant in networking and multiprocessing
     - Go routines can be thought of as super lightweight threads
-    - Very easy to communicate between go routines via channels
-- **Good idea to use Go when developing scalable, high-performance applications**
+    - It's easy to communicate between go routines via channels
+- **It's advised to use Go when developing scalable, high-performance applications**
 
 ### What are some cons with using Go?
-- No race condition safety → need to use synchronization primitives (eg. sync package)
-- Error handling is very bare-bones
+- There is no race condition safety; you need to use synchronization primitives (eg. sync package)
+- Error handling is bare-bones
 - No generics implementation yet
 - Compile-time strictness can be annoying
-- Not at lot of other in-built data structures besides arrays, slices, maps
+- Not at lot of other in-built data structures besides arrays, slices, and maps
 
 ## Useful Links
 
