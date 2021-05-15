@@ -14,22 +14,19 @@ otherExampleMap := map[KeyType]ValueType{}
 //Use interface{} if the ValueType can be anything
 anyValueMap := make(map[string]interface{})
 ```
+
 - KeyType must be a type that is comparable => "boolean, numeric, string, pointer, channel, and interface types, and structs or arrays that contain only those types"
 - ValueType can be of any type, including custom structs or other maps
-  - use interface{} as your ValueType to have the map's valueType be of anything
+    - use `interface{}` as your ValueType to have the map's valueType be of anything
 
 ### Reading and Writing Map Elements
 
 Like other languages, one can directly read, write, and delete values from Go maps.
 ```go
 //Setting Map Elements
-
 cardMap["ace"] = 1
-
 cardMap["jack"] = 11
-
 cardMap["queen"] = 12
-
 cardMap["king"] = 13
 
 // cardMap == map[ace:1 jack:11 king:13 queen:12]
@@ -38,12 +35,12 @@ cardMap["king"] = 13
 Reading Map Element
 ```go
 j := cardMap["queen"]
-//j == 12
+// j == 12
 ```
 Deleting Map Element
 ```go
 delete(cardMap, "king")
-//cardMap == map[ace:1 jack:11 queen:12]
+// cardMap == map[ace:1 jack:11 queen:12]
 ```
 ### Map Literals
 
@@ -63,11 +60,10 @@ for key, value := range exampleMap{
   //Process key and/or value
 }
 ```
+
 - Can use `_` in place of key or value if they aren't needed
 
 Example:
-
-Go code
 ```go
 for key, value := range cardMap{
   fmt.Println("Key:", key, "; Value:", value)
@@ -103,8 +99,8 @@ if !ok{
 ```
 Example:
 
-//Given: "king" and its value don't exist in cardMap
 ```go
+//Given: "king" and its value don't exist in cardMap
 k, ok := cardMap["king"]
 
 if !ok{

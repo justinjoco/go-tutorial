@@ -1,8 +1,6 @@
 Sample code link: ([https://repl.it/@jjoco/go-interfaces](https://repl.it/@jjoco/go-interfaces))
 ### Writing and Implementing Interfaces
 
-Syntax
-
 Interfaces are method blueprints and follow the syntax:
 ```go
 type InterfaceName interface{
@@ -13,8 +11,6 @@ type InterfaceName interface{
     .
 }
 ```
-Example:
-
 The following Shape interface defines two method signatures.
 ```go
 type Shape interface{
@@ -25,7 +21,6 @@ type Shape interface{
 Structs can implement those method signatures, eg Rectangle and Circle.
 ```go
 /*Rectangle Implements Shape methods*/
-
 type Rectangle struct {
     width float64
     height float64
@@ -35,15 +30,12 @@ func (rect Rectangle) getArea() float64{
     return rect.width * rect.height
 }
 
-
-
 func (rect Rectangle) getDimensions() []float64 {
     return []float64 {rect.width, rect.height}
 }
 ```
 ```go
 /*Circle Implements Shape methods*/
-
 type Circle struct {
     radius float64
 }
@@ -83,17 +75,17 @@ PrintShapeArea(rect)
 PrintShapeArea(circle)
 // "Shape Area = 25"
 ```
-Let's go through a more practical example. Let's say we have a black-box function that takes the io.Reader interface (from io package) as a parameter
+Let's go through a more practical example. Let's say we have a black-box function that takes the `io.Reader` interface (from io package) as a parameter
 ```go
 func handleReader(r io.Reader){
 ...
 }
 ```
-Structs that implement io.Reader must implement the Read(p []byte) (n int, err error) method, such as *os.File and *bytes.Buffer Since these structs have the Read method and the handleReader function only cares that the input struct implements the Read method, handleReader can handle both *os.File and *bytes.Buffer inputs without compilation error. Of course, there are many more structs that implement the io.Reader interface, and handleReader can handle inputs of each struct without compilation error.
+Structs that implement `io.Reader` must implement the `Read(p []byte) (n int, err error)` method, such as `*os.File` and `*bytes.Buffer` Since these structs have the Read method and the `handleReader` function only cares that the input struct implements the Read method, `handleReader` can handle both `*os.File` and `*bytes.Buffer` inputs without compilation error. Of course, there are many more structs that implement the `io.Reader` interface, and `handleReader` can handle inputs of each struct without compilation error.
 
 ### Empty Interface
 
-An empty interface contains zero methods. Since every type implements at least zero methods, the empty interface can be used as an "any" type, if the developer uncertain about the types of a function, map valueType, etc. For example, any map, slice, struct implement at least zero methods; thus, they implement the empty interface.
+An empty interface contains zero methods. Since every type implements at least zero methods, the empty interface can be used as an `any` type, if the developer uncertain about the types of a function, map valueType, etc. For example, any map, slice, struct implement at least zero methods; thus, they implement the empty interface.
 
 Examples:
 
@@ -107,7 +99,7 @@ sampleMap["hello"] = "there"
 sampleMap["brooklynn"] = 99
 //sampleMap == map[brooklynn:99 hello:there]
 ```
-In the above example, since strings and integers implement at least zero methods, they implement the empty interface, which allow each type to be added into sampleMap
+In the above example, since strings and integers implement at least zero methods, they implement the empty interface, which allow each type to be added into `sampleMap`
 
 **Empty Interface as a function parameter type**
 ```go
@@ -119,4 +111,4 @@ func printVariable(input interface{}){
 // printVariable(124553) Output = "124553"
 // printVariable(1.034) Output = "1.034"
 ```
-Similar to the reasoning above, since strings, floats, and integers have at least zero methods, they implement the empty interface, allowing each to be an input to the printVariable function.
+Similar to the reasoning above, since strings, floats, and integers have at least zero methods, they implement the empty interface, allowing each to be an input to the `printVariable` function.

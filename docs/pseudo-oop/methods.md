@@ -1,8 +1,6 @@
 
 Sample code link: ([https://repl.it/@jjoco/go-methods](https://repl.it/@jjoco/go-methods))
 ### Writing and Using Methods
-Syntax
-
 These are analogous to class methods in OOP languages
 ```go
 func (receiver ReceiverType) methodName(args) returnType{
@@ -30,7 +28,7 @@ func (vec Vector) CalculateLength() float64 {
     return math.Sqrt(math.Pow((vec.end.x - vec.start.x), 2) + math.Pow((vec.end.y- vec.start.y),2))
 }
 ```
-In main, I can call the struct's method like calling class methods in other OOP languages via .functionName():
+In main, I can call the struct's method like calling class methods in other OOP languages via `.functionName()`:
 ```go
 start := Coordinate{1 , 1}
 end := Coordinate{7, 9}
@@ -52,7 +50,7 @@ func (vec *Vector) SetStartEnd(start Coordinate, end Coordinate){
     vec.end = end
 }
 ```
-Main:
+Calling function:
 ```go
 vector.SetStartEnd(Coordinate{3, 4}, Coordinate{0, 0})
 //"Vector Length = 5"
@@ -65,4 +63,4 @@ func (vec *Vector) CalculateLength() float64 {
     return math.Sqrt(math.Pow((vec.end.x - vec.start.x), 2) + math.Pow((vec.end.y - vec.start.y),2))
 }
 ```
-**Keep in mind that not using pointer receiver syntax would make a copy of the input struct variable. Since we're using a pointer receiver, we're only using the struct variable's address, reducing potential time and memory overhead.**
+Keep in mind that not using pointer receiver syntax would make a copy of the input struct variable. Since we're using a pointer receiver, we're only using the struct variable's address, reducing potential time and memory overhead.

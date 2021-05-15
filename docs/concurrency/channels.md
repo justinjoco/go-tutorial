@@ -7,9 +7,8 @@ If two go routines were processes, the go channel is the bridge between them:
 
 ### Non-Buffered Channels
 
-By default channels are _unbuffered_, meaning that they will only accept sends (chan <-) if there is a corresponding receive (<- chan) ready to receive the sent value
+By default channels are _unbuffered_, meaning that they will only accept sends (chan <-) if there is a corresponding receive (`<-chan`) ready to receive the sent value
 
-Syntax:
 ```go
 channel := make(chan ElementType)
 ```
@@ -37,7 +36,7 @@ readVar <- channel
 
 **Non-buffered example**
 
-- A go routine is writing into nonBufferedChannel and has a receive in the main goroutine
+A go routine is writing into nonBufferedChannel and has a receive in the main goroutine
 ```go
 nonBuffedChannel := make(chan string)
 
@@ -113,6 +112,9 @@ pong(pings, pongs)
 
 fmt.Println(<-pongs)
 ```
+
+What is happening above:
+
 1. ping is writing passed message into the pings channel
 2. pong is reading passed message from pings channel and writing passed message into the pongs channel
 3. The main goroutine is reading and printing out passed message from the pongs channel
@@ -124,7 +126,7 @@ A go routine can close a channel if you're completely done with it
 close(channel)
 ```
 
-Another go routine can use range to iterate through closed buffered channel
+Another go routine can use `range` to iterate through closed buffered channel
 ```go
 for elem := range channel {
   // Do stuff to each element in the channel
@@ -163,11 +165,11 @@ Console output
 120
 */
 ```
-The main function uses range in order to iterate through all the values in the closed factorialChannel.
+The main function uses `range` in order to iterate through all the values in the closed `factorialChannel`.
 
 ### Select
 
-A go routine that uses select waits until it has read or written to a specified channel.
+A goroutine that uses select waits until it has read or written to a specified channel.
 
 Syntax:
 ```go
@@ -184,7 +186,7 @@ select {
   ...
 }
 ```
-- Notes
+Notes
 
   - Blocking Send/Receive: Without default, select waits until something can be read from channel or written into it
   - Non-Blocking Send/Receive: With default, select does not wait for a send or receive case to be satisfied

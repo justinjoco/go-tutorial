@@ -17,7 +17,7 @@ Like other programming languages, Go has primitive data types:
 
 ### Regular Assignment
 
-At compile time, the developer can specify the type of the variable declared using the `var` keyword. As an FYI, Go's variable naming convention is `snake_case`.
+At compile time, the developer can specify the type of the variable declared using the `var` keyword. As an FYI, Go's variable naming convention is `camelCase`.
 
 ```go
 var notAssignedInt int
@@ -109,7 +109,7 @@ Golang supports the same arithmetic, comparison, logical, bitwise, and assignmen
 - `/=` divide, then assign
 - `%=` modulo, then assign
 
-Bitwise
+**Bitwise**
 
 - `&` Bitwise AND
 - `|` Bitwise OR

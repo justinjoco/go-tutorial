@@ -7,7 +7,9 @@ func functionName(arg0 Arg1Type, ... ,argN ArgNType) ReturnType {
   //Function code goes here...
 }
 ```
+
 Syntax notes:
+
   - function => func
   - No colons between variable name and its type
 
@@ -22,7 +24,7 @@ func getHypotenuse(x float64, y float64) float64 {
 
 The defer keyword is used to run a statement after the current function has returned. You might want to use this if, for example, you had a port listener and you wanted to close it after a function returns.
 
-Sample:
+Sample usage:
 ```go
 func testDefer(){
   defer fmt.Println("Called after testDefer() returns")
@@ -47,11 +49,12 @@ The above function can have two or more integers as parameters, and the function
 
 This allows functions like append to have a variable amount of elements to add into a slice.
 
-In main function:
+In calling function:
 ```go
 numbers := []int {1, 2, 3, 4, 5, 6}
 fmt.Println(sum(numbers...))
 // Output = "21"
 ```
+
 - Use `...elementType` in function signature to denote a varying amount of arguments of elementType
 - Use `elementArr...` to unpack the elements in elementArr into function's input

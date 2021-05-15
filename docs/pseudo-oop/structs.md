@@ -15,7 +15,8 @@ type TypeName struct {
   .
 }
 ```
-- Syntax notes:
+Syntax notes:
+
   - Use of struct keyword instead of = when making a new type
   - No classes or objects in Go
   - No colon between field name and its type
@@ -49,7 +50,8 @@ var structCustom2 = StructName{args}
 /*Short Assignment*/
 structShort := StructName{args}
 ```
-- Syntax notes:
+Syntax notes:
+
   - No use of new keyword
   - Use of curly brackets {} instead of parentheses ()
   - No colons when declaring type
@@ -62,7 +64,7 @@ Examples:
 Fields within structs are zero-valued, if not defined at compile-time.
 ```go
 defaultRect := Rectangle{}
-//Output = "Rectangle object: {0 0}"
+// Output = "Rectangle object: {0 0}"
 // "Width = 0; Height = 0"
 ```
 #### With input parameters
@@ -76,9 +78,7 @@ customRect := Rectangle{2, 4}
 customRect2 := Rectangle{height: 2, width: 4}
 // Output = "Rectangle object: {4 2}"
 // "Width = 4; Height = 2"
-```
-#### Using struct not defined in calling file
-```go
+
 defaultCircle := Circle{}
 //Output = "Circle Object: {0}"
 // "Radius = 0.000000"

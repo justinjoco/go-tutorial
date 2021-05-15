@@ -67,7 +67,7 @@ Syntax notes:
 - No break after each case
 - No true expression needed in switch
 
-Go example
+Example
 ```go
 grade := 71
 letterGrade := ""

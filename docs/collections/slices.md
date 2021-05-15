@@ -72,11 +72,11 @@ j := strLiteralSlice[2]
 
 Slices have useful methods that a dev can use
 
-`len(slice)` => Returns length (integer) of slice
+- `len(slice)` => Returns length (integer) of slice
 
-`cap(slice)` => returns capacity (integer) of slice
+- `cap(slice)` => returns capacity (integer) of slice
 
-`append(slice, newElements...)` => returns a slice that contains elements from newElements added into input slice
+- `append(slice, newElements...)` => returns a slice that contains elements from newElements added into input slice
 
 **Append example**
 ```go
@@ -111,8 +111,6 @@ for index, element := range exampleSlice {
 }
 ```
 Example:
-
-Go code
 ```go
 iterSlice := []string{"baseball", "basketball", "soccer", "hockey", "football"}
 //Use if both index and element are needed

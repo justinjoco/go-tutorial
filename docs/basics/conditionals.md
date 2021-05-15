@@ -15,7 +15,7 @@ if condition {
 }
 ```
 
-Go example
+Example
 ```go
 count := 6
 
@@ -44,13 +44,15 @@ if count %15 == 0 {
 }
 //Output = "Buzz"
 ```
+In the above example, we check to see if a `count` is divsible by a certain number, and the respective case is executed.
+
 ### If with Short Assignment
 
-In Go, the user can assign a variable and condition on that variable on the same line (separated by a ;), like the following
+In Go, the user can assign a variable and condition on that variable on the same line (separated by a `:`), like the following
 ```go
 if shortStatementInt := 32; shortStatementInt > 30{
     fmt.Printf("shortStatementInt is above 30!\n")
 }
 //Output = "shortStatementInt is above 30!"
 ```
-In the above example, shortStatementInt is assigned, then evaluated in the condition following the `;`
+In the above example, shortStatementInt is assigned, then evaluated in the condition following the `:`
