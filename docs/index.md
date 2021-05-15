@@ -2,6 +2,10 @@ This document is a how-to for developers on how to read and write Go code. Reade
 
 This document will also include links to repl.it, in which readers can run and change pre-existing Go code to further understand how to use it.
 
+**Please leave your feedback here:** <https://forms.gle/zezZNmo7XGrq5xZZ6>.
+
+**To raise an issue on Github for feature requests or bug fixes, go here:** <https://github.com/justinjoco/go-tutorial/issues>
+
 ## What is the Go (Golang) language?
 Firstly, Go is a compiled programming language. To understand what this means, we must distinguish two times: compile time and run time. For a program to run, your code must be compiled (compile time), and the resulting executable should be ran (run time).
 
